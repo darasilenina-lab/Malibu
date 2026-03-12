@@ -1,0 +1,155 @@
+/* Основные стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #7997e2;
+    color: #333;
+}
+
+.hot-tours{
+background-color: #d7dff6;
+}
+
+.container {
+    max-width: 1170px;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 20px;
+}
+
+.site-header h1 a {
+    text-decoration: none;
+    color: black;
+    font-size: 2em;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav li {
+    margin-right: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    transition: all .3s ease-in-out;
+}
+
+nav a:hover {
+    color: red;
+}
+
+.hero-section img {
+    width: 100%;
+    height: auto;
+}
+
+.tour-form form {
+    display: grid;
+    gap: 1rem;
+    place-items: center;
+    padding: 20px;
+    background-color: rgb(193, 227, 225);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.tour-item img{
+    width: 50%;
+}
+
+.tour-form label,
+.tour-form input[type="text"],
+.tour-form input[type="date"],
+.tour-form input[type="number"] {
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.tour-form button {
+    background-color: green;
+    color: white;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+
+.services ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.team-member img {
+    width: 10%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.reviews{
+    background-color: #f3c87a;
+}
+.reviews blockquote {
+    border-left: 5px solid gray;
+    padding-left: 15px;
+    quotes: '“' '”';
+        background-color: #ffffff;
+}
+
+.news {
+  background-color: #afbfe8;   
+}
+.news article img {
+    float: left;
+    margin-right: 15px;
+    width: 8%;
+    height: auto;
+   
+}
+
+.contacts address {
+    font-style: normal;
+}
+
+.site-footer small {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+}
+
+/* Адаптивность */
+@media screen and (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+    
+    main section {
+        padding: 10px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1366px) {
+    body {
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 1366px) {
+    body {
+        font-size: 18px;
+    }
+}

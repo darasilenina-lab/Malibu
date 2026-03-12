@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Туристическое Агентство "Малибу"</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Шапка -->
+    <header class="site-header">
+        <div class="container">
+            <h1><a href="#">Туристическое агентство "Малибу"</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Главная</a></li>
+                    <li><a href="#hot-tours">Горящие туры</a></li>
+                    <li><a href="#choose-tour">Выберите тур</a></li>
+                    <li><a href="#services">Наши услуги</a></li>
+                    <li><a href="#team">Наша команда</a></li>
+                    <li><a href="#reviews">Отзывы</a></li>
+                    <li><a href="#contacts">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Основная часть -->
+    <main>
+        
+        <section id="home" class="hero-section">
+            <img src="images/banner1.png" alt="Баннер нашего агентства">
+        </section>
+        
+
+        <section id="choose-tour" class="tour-form">
+            <form action="#" method="post">
+                <label for="from">Откуда:</label>
+                <input type="text" id="from" placeholder="Москва">
+                
+                <label for="to">Куда:</label>
+                <input type="text" id="to" placeholder="Санкт-Петербург">
+                
+                <label for="departure-date">Дата вылета:</label>
+                <input type="date" id="departure-date">
+                
+                <label for="nights">Кол-во ночей:</label>
+                <input type="number" id="nights" min="1">
+                
+                <label for="people">Кол-во человек:</label>
+                <input type="number" id="people" min="1">
+                
+                <button type="submit">Найти</button>
+            </form>
+        </section>
+        
+        <section id="hot-tours" class="hot-tours">
+            <h2>Горящие туры</h2>
+            <div class="tour-item">
+                <img src="images/tur.png" alt="Туры">
+                <p>Название тура: Тур №1</p>
+                <p>Дней: 7</p>
+                <p>Стоимость: 30 000 руб.</p>
+            </div>
+            
+            <div class="tour-item">
+                <img src="images/tur1.png" alt="Туры">
+                <p>Название тура: Тур №2</p>
+                <p>Дней: 10</p>
+                <p>Стоимость: 45 000 руб.</p>
+            </div>
+        </section>
+        
+        <section id="services" class="services">
+            <h2>Наши услуги</h2>
+            <ul>
+                <li>Отдых за границей</li>
+                <li>Отдых в России</li>
+                <li>Круизы</li>
+            </ul>
+        </section>
+        
+        <section id="team" class="team">
+            <h2>Наша команда</h2>
+            <div class="team-member">
+                <img src="images/Ivan.png" alt="Член команды">
+                <p>Иван Иванов</p>
+                <p>Менеджер по продажам</p>
+            </div>
+            
+            <div class="team-member">
+                <img src="images/anna.png" alt="Член команды">
+                <p>Анна Петрова</p>
+                <p>Маркетолог</p>
+            </div>
+        </section>
+        
+        <section id="reviews" class="reviews">
+            <h2>Отзывы наших клиентов</h2>
+            <blockquote>
+                Отличный сервис и подбор тура! Спасибо команде агентства.
+                <footer>— Анна Смирнова</footer>
+            </blockquote>
+        </section>
+        
+        <section id="news" class="news">
+            <h2>Новости</h2>
+            <article>
+                <img src="images/malibu.png" alt="Новость">
+                <h3>Новый сезон открыт!</h3>
+                <p>Мы открыли продажи на новый летний сезон.</p>
+            </article>
+        </section>
+        
+        <section id="contacts" class="contacts">
+            <h2>Контактная информация</h2>
+            <address>
+                Адрес: Москва, ул. Ленина, д. 1<br>
+                Телефон: +7 (495) 123-45-67<br>
+                Email: info@malibu.ru
+            </address>
+        </section>
+    </main>
+    
+    <!-- Подвал -->
+    <footer class="site-footer">
+        <div class="container">
+            <small>© 2025 Туристическое агентство "Малибу". Все права защищены.</small>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
